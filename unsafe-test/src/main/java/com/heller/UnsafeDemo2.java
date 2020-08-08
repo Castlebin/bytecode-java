@@ -2,14 +2,13 @@ package com.heller;
 
 import sun.misc.Unsafe;
 
-import java.lang.reflect.Field;
+import static com.heller.UnsafeUtil.getUnsafe;
+import static sun.nio.ch.IOStatus.normalize;
 
 public class UnsafeDemo2 {
     public static void main(String[] args) {
         try {
-            Field theUnsafeField = Unsafe.class.getDeclaredField("theUnsafe");
-            theUnsafeField.setAccessible(true);
-            Unsafe unsafe = (Unsafe) theUnsafeField.get(null);
+            Unsafe unsafe = getUnsafe();
 
             A a = new A();
             System.out.println(a.getA());   // 1
@@ -21,11 +20,7 @@ public class UnsafeDemo2 {
             // Unsafe 直接分配内存，生成对象，不执行对象的初始化
             A o = (A)unsafe.allocateInstance(A.class);
             System.out.println(o.getA());   // 0
-        } catch (NoSuchFieldException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
+        } catch (InstantiationException | IllegalAccessException e) {
             e.printStackTrace();
         }
     }
