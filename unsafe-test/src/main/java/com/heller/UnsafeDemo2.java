@@ -3,7 +3,6 @@ package com.heller;
 import sun.misc.Unsafe;
 
 import static com.heller.UnsafeUtil.getUnsafe;
-import static sun.nio.ch.IOStatus.normalize;
 
 public class UnsafeDemo2 {
     public static void main(String[] args) {
