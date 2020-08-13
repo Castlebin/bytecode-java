@@ -10,7 +10,7 @@ public class UnsafeUtil {
      * 因为 Unsafe 限制了实例化，所以只能通过反射获取到静态实例
      * @return unsafe 实例
      */
-    public static final Unsafe getUnsafe() {
+    public static Unsafe getUnsafe() {
         try {
             Field theUnsafe = Unsafe.class.getDeclaredField("theUnsafe");
             theUnsafe.setAccessible(true);

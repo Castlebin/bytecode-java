@@ -1,8 +1,9 @@
-package com.heller;
+package com.heller.unsafe;
 
 import sun.misc.Unsafe;
 
-import static com.heller.UnsafeUtil.getUnsafe;
+import static com.heller.unsafe.UnsafeUtil.getUnsafe;
+
 
 public class UnsafeDemo2 {
     public static void main(String[] args) {
