@@ -16,10 +16,6 @@ public class MyHotDeployApplication {
 
     public static String rootPath;
 
-    public static void main(String[] args) {
-
-    }
-
     public static void init() {
         System.out.println("初始化项目...");
     }
