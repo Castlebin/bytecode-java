@@ -20,7 +20,6 @@ public class TestMyClassLoader {
                     rootPath,
                     rootPath + "/com/heller/loader"
             );
-            loader.loadClasses();
 
             Class<?> aClass = loader.loadClass("com.heller.loader.ClassForTest");
             Object o = aClass.newInstance();
