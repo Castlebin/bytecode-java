@@ -19,24 +19,19 @@ public class MyClassLoader extends ClassLoader {
      * @param rootPath   指定路径
      * @param classPaths 类路径
      */
-    public MyClassLoader(String rootPath, String... classPaths) {
+    public MyClassLoader(String rootPath, String... classPaths) throws IOException {
         this.rootPath = rootPath;
         for (String classPath : classPaths) {
             this.classPaths.add(classPath);
-        }
-    }
-
-    /**
-     * 加载 class 至 JVM 虚拟机中
-     *
-     * @throws IOException
-     */
-    public void loadClasses() throws IOException {
-        for (String classPath : classPaths) {
             loadClassPath(new File(classPath));
         }
     }
 
+    /**
+     * @see ClassLoader.findLoadedClass()
+     * @param file
+     * @throws IOException
+     */
     private void loadClassPath(File file) throws IOException {
         if (file.isDirectory()) {
             for (File f : file.listFiles()) {
@@ -59,7 +54,7 @@ public class MyClassLoader extends ClassLoader {
     }
 
     /**
-     * 重载 loadClass 方法，没有使用 父类加载器委托 机制
+     * 重载 loadClass 方法
      * @param
      * @return
      */
