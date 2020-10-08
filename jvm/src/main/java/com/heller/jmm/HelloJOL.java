@@ -15,5 +15,9 @@ public class HelloJOL {
             System.out.println(ClassLayout.parseInstance(object).toPrintable());
         }
         System.out.println(ClassLayout.parseInstance(object).toPrintable());
+
+        // 对象头中的 hash 值，将在第一次调用 对象的 hashCode() 方法后才被设置
+        object.hashCode();
+        System.out.println(ClassLayout.parseInstance(object).toPrintable());
     }
 }
