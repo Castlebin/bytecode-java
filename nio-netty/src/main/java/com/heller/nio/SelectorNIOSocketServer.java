@@ -14,6 +14,9 @@ import java.util.Set;
  使用 Selector 来注册连接，使用底层的 epoll 模型   ，   真正的 NIO 使用姿势
 
  采用事件机制，所以不会浪费 CPU，并且也不用轮询所有的连接
+
+ （ 本程序弊端： 所有的任务都在主线程里处理，连接、读取数据、处理数据等，并发量必定上不去，所以，得引入线程池 ）
+
  */
 public class SelectorNIOSocketServer {
 
