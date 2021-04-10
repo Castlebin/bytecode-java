@@ -22,7 +22,7 @@ import java.util.List;
     (NIO 读取数据需要 Buffer  ，   对应  BIO 直接使用的 字节数组)
 
 
- 因为不阻塞，所以就是死循环，CPU 空转
+ 因为不阻塞，所以就是死循环，CPU 空转  而且，需要检查所有的连接，找出每个连接是否有数据了
  */
 public class SimpleNIOSocketServer {
 
