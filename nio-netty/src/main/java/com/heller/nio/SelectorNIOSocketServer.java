@@ -12,7 +12,7 @@ import java.util.Set;
 
 /**
  使用 Selector 来注册连接，使用底层的 epoll 模型   ，   真正的 NIO 使用姿势
- 
+
  采用事件机制，所以不会浪费 CPU，并且也不用轮询所有的连接
  */
 public class SelectorNIOSocketServer {
