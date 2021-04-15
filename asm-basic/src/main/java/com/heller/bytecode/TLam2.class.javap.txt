@@ -1,0 +1,176 @@
+Classfile /Users/heller/study-code/deep-thinking-java/asm-basic/target/classes/com/heller/bytecode/TLam2.class
+  Last modified Apr 15, 2021; size 1764 bytes
+  MD5 checksum f3d21d6c2ec65c299fd2069a622a81b5
+  Compiled from "TLam2.java"
+public class com.heller.bytecode.TLam2
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #9.#34         // java/lang/Object."<init>":()V
+   #2 = InvokeDynamic      #0:#40         // #0:accept:()Ljava/util/function/Consumer;
+   #3 = InvokeDynamic      #1:#44         // #1:apply:()Ljava/util/function/Function;
+   #4 = Methodref          #45.#46        // java/lang/Long.parseLong:(Ljava/lang/String;)J
+   #5 = Methodref          #45.#47        // java/lang/Long.valueOf:(J)Ljava/lang/Long;
+   #6 = Fieldref           #48.#49        // java/lang/System.out:Ljava/io/PrintStream;
+   #7 = Methodref          #50.#51        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #8 = Class              #52            // com/heller/bytecode/TLam2
+   #9 = Class              #53            // java/lang/Object
+  #10 = Utf8               <init>
+  #11 = Utf8               ()V
+  #12 = Utf8               Code
+  #13 = Utf8               LineNumberTable
+  #14 = Utf8               LocalVariableTable
+  #15 = Utf8               this
+  #16 = Utf8               Lcom/heller/bytecode/TLam2;
+  #17 = Utf8               accept
+  #18 = Utf8               consumer
+  #19 = Utf8               Ljava/util/function/Consumer;
+  #20 = Utf8               strToLong
+  #21 = Utf8               Ljava/util/function/Function;
+  #22 = Utf8               LocalVariableTypeTable
+  #23 = Utf8               Ljava/util/function/Consumer<Ljava/lang/String;>;
+  #24 = Utf8               Ljava/util/function/Function<Ljava/lang/String;Ljava/lang/Long;>;
+  #25 = Utf8               lambda$accept$1
+  #26 = Utf8               (Ljava/lang/String;)Ljava/lang/Long;
+  #27 = Utf8               numStr
+  #28 = Utf8               Ljava/lang/String;
+  #29 = Utf8               lambda$accept$0
+  #30 = Utf8               (Ljava/lang/String;)V
+  #31 = Utf8               s
+  #32 = Utf8               SourceFile
+  #33 = Utf8               TLam2.java
+  #34 = NameAndType        #10:#11        // "<init>":()V
+  #35 = Utf8               BootstrapMethods
+  #36 = MethodHandle       #6:#54         // invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #37 = MethodType         #55            //  (Ljava/lang/Object;)V
+  #38 = MethodHandle       #6:#56         // invokestatic com/heller/bytecode/TLam2.lambda$accept$0:(Ljava/lang/String;)V
+  #39 = MethodType         #30            //  (Ljava/lang/String;)V
+  #40 = NameAndType        #17:#57        // accept:()Ljava/util/function/Consumer;
+  #41 = MethodType         #58            //  (Ljava/lang/Object;)Ljava/lang/Object;
+  #42 = MethodHandle       #6:#59         // invokestatic com/heller/bytecode/TLam2.lambda$accept$1:(Ljava/lang/String;)Ljava/lang/Long;
+  #43 = MethodType         #26            //  (Ljava/lang/String;)Ljava/lang/Long;
+  #44 = NameAndType        #60:#61        // apply:()Ljava/util/function/Function;
+  #45 = Class              #62            // java/lang/Long
+  #46 = NameAndType        #63:#64        // parseLong:(Ljava/lang/String;)J
+  #47 = NameAndType        #65:#66        // valueOf:(J)Ljava/lang/Long;
+  #48 = Class              #67            // java/lang/System
+  #49 = NameAndType        #68:#69        // out:Ljava/io/PrintStream;
+  #50 = Class              #70            // java/io/PrintStream
+  #51 = NameAndType        #71:#30        // println:(Ljava/lang/String;)V
+  #52 = Utf8               com/heller/bytecode/TLam2
+  #53 = Utf8               java/lang/Object
+  #54 = Methodref          #72.#73        // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #55 = Utf8               (Ljava/lang/Object;)V
+  #56 = Methodref          #8.#74         // com/heller/bytecode/TLam2.lambda$accept$0:(Ljava/lang/String;)V
+  #57 = Utf8               ()Ljava/util/function/Consumer;
+  #58 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #59 = Methodref          #8.#75         // com/heller/bytecode/TLam2.lambda$accept$1:(Ljava/lang/String;)Ljava/lang/Long;
+  #60 = Utf8               apply
+  #61 = Utf8               ()Ljava/util/function/Function;
+  #62 = Utf8               java/lang/Long
+  #63 = Utf8               parseLong
+  #64 = Utf8               (Ljava/lang/String;)J
+  #65 = Utf8               valueOf
+  #66 = Utf8               (J)Ljava/lang/Long;
+  #67 = Utf8               java/lang/System
+  #68 = Utf8               out
+  #69 = Utf8               Ljava/io/PrintStream;
+  #70 = Utf8               java/io/PrintStream
+  #71 = Utf8               println
+  #72 = Class              #76            // java/lang/invoke/LambdaMetafactory
+  #73 = NameAndType        #77:#81        // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #74 = NameAndType        #29:#30        // lambda$accept$0:(Ljava/lang/String;)V
+  #75 = NameAndType        #25:#26        // lambda$accept$1:(Ljava/lang/String;)Ljava/lang/Long;
+  #76 = Utf8               java/lang/invoke/LambdaMetafactory
+  #77 = Utf8               metafactory
+  #78 = Class              #83            // java/lang/invoke/MethodHandles$Lookup
+  #79 = Utf8               Lookup
+  #80 = Utf8               InnerClasses
+  #81 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #82 = Class              #84            // java/lang/invoke/MethodHandles
+  #83 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #84 = Utf8               java/lang/invoke/MethodHandles
+{
+  public com.heller.bytecode.TLam2();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 6: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/heller/bytecode/TLam2;
+
+  public void accept();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=3, args_size=1
+         0: invokedynamic #2,  0              // InvokeDynamic #0:accept:()Ljava/util/function/Consumer;
+         5: astore_1
+         6: invokedynamic #3,  0              // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+        11: astore_2
+        12: return
+      LineNumberTable:
+        line 9: 0
+        line 11: 6
+        line 12: 12
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      13     0  this   Lcom/heller/bytecode/TLam2;
+            6       7     1 consumer   Ljava/util/function/Consumer;
+           12       1     2 strToLong   Ljava/util/function/Function;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            6       7     1 consumer   Ljava/util/function/Consumer<Ljava/lang/String;>;
+           12       1     2 strToLong   Ljava/util/function/Function<Ljava/lang/String;Ljava/lang/Long;>;
+
+  private static java.lang.Long lambda$accept$1(java.lang.String);
+    descriptor: (Ljava/lang/String;)Ljava/lang/Long;
+    flags: ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #4                  // Method java/lang/Long.parseLong:(Ljava/lang/String;)J
+         4: invokestatic  #5                  // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+         7: areturn
+      LineNumberTable:
+        line 11: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       8     0 numStr   Ljava/lang/String;
+
+  private static void lambda$accept$0(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    flags: ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: aload_0
+         4: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         7: return
+      LineNumberTable:
+        line 9: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       8     0     s   Ljava/lang/String;
+}
+SourceFile: "TLam2.java"
+InnerClasses:
+     public static final #79= #78 of #82; //Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #36 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #37 (Ljava/lang/Object;)V
+      #38 invokestatic com/heller/bytecode/TLam2.lambda$accept$0:(Ljava/lang/String;)V
+      #39 (Ljava/lang/String;)V
+  1: #36 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #41 (Ljava/lang/Object;)Ljava/lang/Object;
+      #42 invokestatic com/heller/bytecode/TLam2.lambda$accept$1:(Ljava/lang/String;)Ljava/lang/Long;
+      #43 (Ljava/lang/String;)Ljava/lang/Long;
